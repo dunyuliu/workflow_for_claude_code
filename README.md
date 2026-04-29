@@ -8,8 +8,11 @@ templates that follow you across machines.
 ```
 workflow_for_claude_code/
 ├── commands/             # custom slash commands (--> ~/.claude/commands/)
-│   └── audit.md          #   /audit — scientific-computing project audit
+│   ├── audit.md          #   /audit — scientific-computing project audit
+│   └── release.md        #   /release — versioned-release workflow
 ├── skills/               # custom skills (--> ~/.claude/skills/)  [empty for now]
+├── templates/
+│   └── PROJECT_RULES.md  # default per-project rulebook for /release to read
 ├── scripts/
 │   └── install.sh        # symlink commands/skills into ~/.claude
 └── README.md
@@ -31,7 +34,7 @@ Claude Code, and `git pull` updates them.
 | Slash | What |
 |---|---|
 | `/audit` | Eight-section project audit tuned for scientific / numerical / data-pipeline projects. Writes `AUDIT.md` in the working dir. Sections: goal & implementation, inventory & stale, reproducibility, physics & numerics, implementation consistency, logging & errors, performance, top-N priorities. |
-| `/release` | Version-bump release workflow. Triggers: `release` (patch), `release minor`, `release major`. Audits the project against `PROJECT_RULES.md`, archives old release notes to `docs/`, writes new `release_notes_v<X.Y.Z>.md` reconciled against the post-audit filesystem state, commits as `release: v<X.Y.Z> — <summary>`. Requires a `PROJECT_RULES.md` in the project root. |
+| `/release` | Version-bump release workflow. Triggers: `release` (patch), `release minor`, `release major`. Audits the project against `PROJECT_RULES.md`, archives old release notes to `docs/`, writes new `release_notes_v<X.Y.Z>.md` reconciled against the post-audit filesystem state, commits as `release: v<X.Y.Z> — <summary>`. Requires a `PROJECT_RULES.md` in the project root — copy `templates/PROJECT_RULES.md` from this repo as a starting point. |
 
 ## Adding a new command
 
