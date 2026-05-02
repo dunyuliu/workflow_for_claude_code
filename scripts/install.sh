@@ -41,7 +41,7 @@ link_one() {
     echo "  link $dst --> $src"
 }
 
-mkdir -p "$CLAUDE_DIR/commands" "$CLAUDE_DIR/skills"
+mkdir -p "$CLAUDE_DIR/commands" "$CLAUDE_DIR/skills" "$CLAUDE_DIR/agents"
 
 if [ -d "$REPO_DIR/commands" ]; then
     echo "Linking commands:"
@@ -60,6 +60,14 @@ if [ -d "$REPO_DIR/skills" ]; then
     done
 fi
 
+if [ -d "$REPO_DIR/agents" ]; then
+    echo "Linking agents:"
+    for f in "$REPO_DIR/agents"/*.md; do
+        [ -f "$f" ] || continue
+        link_one "$f" "$CLAUDE_DIR/agents/$(basename "$f")"
+    done
+fi
+
 echo
 echo "Done. Verify with:"
-echo "  ls -la ~/.claude/commands/ ~/.claude/skills/"
+echo "  ls -la ~/.claude/commands/ ~/.claude/skills/ ~/.claude/agents/"
