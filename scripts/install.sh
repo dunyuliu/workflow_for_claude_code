@@ -27,6 +27,10 @@ link_one() {
         echo "  SKIP $dst (different symlink target: $existing; use --force)"
         return
     fi
+    if [ -d "$dst" ] && [ ! -L "$dst" ]; then
+        echo "  SKIP $dst (directory exists; refusing to clobber even with --force)"
+        return
+    fi
     if [ -e "$dst" ]; then
         if [ "$FORCE" = 1 ]; then
             echo "  redo $dst (was a regular file, replaced)"

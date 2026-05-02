@@ -1,5 +1,5 @@
 ---
-description: Release workflow — bump version, audit against PROJECT_RULES.md, write release notes reconciled against the final filesystem state, then commit.
+description: Release workflow — bump version, ARCHIVE old release notes to docs/ (never delete), audit against PROJECT_RULES.md, write release notes reconciled against the final filesystem state, re-verify, then commit. Triggers — `release` (patch), `release minor`, `release major`. Requires PROJECT_RULES.md in repo root.
 ---
 
 <!-- 20260427 - v1 -->

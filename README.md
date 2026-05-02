@@ -10,20 +10,22 @@ workflow_for_claude_code/
 ├── commands/             # custom slash commands     (--> ~/.claude/commands/)
 │   ├── audit.md          #   /audit — single-pass scientific-project audit
 │   └── release.md        #   /release — versioned-release workflow
-├── agents/               # specialist subagents      (--> ~/.claude/agents/)
-│   ├── auditor.md        #   orchestrator — routes to specialists
-│   ├── auditor-claims.md #   verify numeric claims vs anchors
-│   ├── auditor-code.md   #   read code, find math/edge-case bugs
-│   ├── auditor-pipeline.md         # trace one item end-to-end
-│   ├── auditor-data-quality.md     # raw-source-vs-extracted verification
-│   └── auditor-spec-drift.md       # docs vs code drift
-├── skills/               # custom skills             (--> ~/.claude/skills/)
+├── agents/                            # specialist subagents  (--> ~/.claude/agents/)
+│   ├── auditor.md                     #   orchestrator — routes to specialists
+│   ├── auditor-claims.md              #   verify numeric claims vs anchors
+│   ├── auditor-code.md                #   read code, find math/edge-case bugs
+│   ├── auditor-pipeline.md            #   trace one item end-to-end
+│   ├── auditor-data-quality.md        #   raw-source-vs-extracted verification
+│   └── auditor-spec-drift.md          #   docs vs code drift
+├── skills/                            # custom skills         (--> ~/.claude/skills/)
+│                                      #   (empty — drop new skills/<name>/SKILL.md here)
 ├── templates/
-│   └── PROJECT_RULES.md  #   per-project rulebook for /release
-├── examples/             # real audit reports — copy/paste templates
-├── evals/                # regression test cases for the prompts (TBD)
+│   └── PROJECT_RULES.md               # per-project rulebook for /release
+├── examples/                          # real audit reports — copy/paste templates
+├── evals/                             # regression-test cases for the prompts
+│                                      #   (skeleton only — see evals/README.md)
 ├── scripts/
-│   └── install.sh        # symlink everything into ~/.claude
+│   └── install.sh                     # symlink everything into ~/.claude
 └── README.md
 ```
 
