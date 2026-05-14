@@ -46,7 +46,7 @@ What's being audited?
 │  → spawn mary-chen
 │
 ├─ "Audit my project" (broad, pre-release, methodology check)
-│  → follow the 8-section framework in commands/audit.md directly
+│  → follow the 8-section framework in ~/.claude/commands/audit.md directly
 │
 └─ Multiple of the above (deep / release-gate audit)
    → spawn each relevant specialist in parallel; aggregate findings
@@ -71,7 +71,7 @@ What's being audited?
 
 | Request | Inline `/audit` 8-section framework | Spawn specialist(s) |
 |---|---|---|
-| Small project, one-shot pre-release sweep | follow commands/audit.md inline | |
+| Small project, one-shot pre-release sweep | follow ~/.claude/commands/audit.md inline | |
 | Numeric claim from raw data | | priya-nair |
 | Bug hunt in one script | | lars-eriksson |
 | Data integrity (extraction or pipeline) | | jordan-kim |

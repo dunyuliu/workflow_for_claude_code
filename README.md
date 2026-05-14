@@ -29,7 +29,7 @@ consilium/
 ## Install on a new machine
 
 ```bash
-git clone git@github.com:dunyuliu/consilium.git ~/consilium
+git clone https://github.com/dunyuliu/consilium.git ~/consilium
 bash ~/consilium/scripts/install.sh
 ```
 

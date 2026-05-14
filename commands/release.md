@@ -23,7 +23,7 @@ When I say `release` (patch), `release minor`, or `release major`, execute this 
 
 3. **Archive old notes.** If `docs/` does not exist, create it. Move every existing `release_notes_v*.md` from the repo root into `docs/`. Do not delete any release notes.
 
-4. **Audit the project against `PROJECT_RULES.md`.** If `PROJECT_RULES.md` does not exist, stop and ask me to create it rather than improvising rules. The audit must check:
+4. **Audit the project against `PROJECT_RULES.md` (if present).** If the file does not exist, skip this step. If it exists, the audit must check:
     - new or unprocessed files
     - naming-rule violations
     - duplicate or outdated files

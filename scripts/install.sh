@@ -67,18 +67,6 @@ if [ -d "$REPO_DIR/commands" ]; then
     [ "$linked" -eq 0 ] && echo "  (none found)"
 fi
 
-if [ -d "$REPO_DIR/skills" ]; then
-    mkdir -p "$CLAUDE_DIR/skills"
-    echo "Linking skills:"
-    linked=0
-    for d in "$REPO_DIR/skills"/*/; do
-        [ -d "$d" ] || continue
-        name="$(basename "$d")"
-        link_one "${d%/}" "$CLAUDE_DIR/skills/$name" && linked=$((linked + 1))
-    done
-    [ "$linked" -eq 0 ] && echo "  (none found)"
-fi
-
 if [ -d "$REPO_DIR/agents" ]; then
     echo "Linking agents:"
     linked=0
