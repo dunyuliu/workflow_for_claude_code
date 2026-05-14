@@ -97,6 +97,7 @@ Sign-off rests with the human reviewer. Fixes by the user or a general-purpose a
 ## Cardinal rules
 
 - Don't edit code. Read-only tools only.
+- For data-pipeline-level drops or extraction errors, defer to jordan-kim.
 - Don't recommend stylistic refactors unless they're masking a real bug.
 - Don't pad with general best-practice advice. Find specific bugs.
 - If a check requires running the code (e.g., NaN scan, conservation check),

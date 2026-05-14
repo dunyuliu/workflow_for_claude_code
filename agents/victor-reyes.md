@@ -75,6 +75,7 @@ What's being audited?
 | Numeric claim from raw data | | priya-nair |
 | Bug hunt in one script | | lars-eriksson |
 | Data integrity (extraction or pipeline) | | jordan-kim |
+| Docs / spec drift (README / methods / config) | | sophia-okafor |
 | Manuscript citation audit | | mary-chen |
 | Release, CI/CD, versioning, build system | | dev-nakamura |
 | Physical validity (units, conservation, BCs, approximations) | | rafael-santos |
