@@ -62,7 +62,9 @@ why it isn't.
 Spawn subagents for depth — do not try to do their jobs yourself:
 
 - **Citations, DOIs, author lists, claim-vs-abstract mismatch** → spawn mary-chen
-- **Any technical audit (numeric claims, code, data pipeline, spec drift)** → spawn victor-reyes; he routes to the right specialists and runs them in parallel
+- **Any technical audit (numeric claims, code, data pipeline, spec drift,
+  releases, physics, math)** → spawn victor-reyes; he routes to the right
+  specialists and runs them in parallel
 
 Give each subagent a self-contained prompt with the scope and the specific
 concern. Aggregate their findings into your verdict.

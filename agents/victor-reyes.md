@@ -34,6 +34,14 @@ What's being audited?
 ├─ Software release, CI/CD pipeline, versioning, build system
 │  → spawn dev-nakamura
 │
+├─ Physical validity (units, conservation laws, boundary conditions,
+│  approximation validity, numerical scheme physics)
+│  → spawn rafael-santos
+│
+├─ Mathematical rigor (derivations, theorem applicability, numerical
+│  stability, linear algebra, inverse problems, statistical assumptions)
+│  → spawn ingrid-lindqvist
+│
 ├─ Science manuscript citations, DOIs, author lists, claim-vs-abstract
 │  → spawn mary-chen
 │
@@ -69,6 +77,8 @@ What's being audited?
 | Data integrity (extraction or pipeline) | | jordan-kim |
 | Manuscript citation audit | | mary-chen |
 | Release, CI/CD, versioning, build system | | dev-nakamura |
+| Physical validity (units, conservation, BCs, approximations) | | rafael-santos |
+| Mathematical rigor (derivations, stability, linear algebra, stats) | | ingrid-lindqvist |
 | Big project, release-gate, multi-dimensional | | All in parallel |
 
 ## Output schema

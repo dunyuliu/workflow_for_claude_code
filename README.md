@@ -18,7 +18,9 @@ consilium/
 │   ├── lars-eriksson.md    #   code math bugs, edge cases, sign conventions
 │   ├── jordan-kim.md       #   data integrity — extraction + pipeline
 │   ├── sophia-okafor.md    #   spec drift — docs vs code
-│   └── dev-nakamura.md     #   releases, CI/CD, versioning, build pipelines
+│   ├── dev-nakamura.md     #   releases, CI/CD, versioning, build pipelines
+│   ├── rafael-santos.md    #   physical validity — units, conservation, BCs
+│   └── ingrid-lindqvist.md #   mathematical rigor — derivations, stability, proofs
 ├── scripts/
 │   └── install.sh     # symlink everything into ~/.claude
 └── README.md
@@ -88,6 +90,8 @@ Need to release or fix CI?
 | `jordan-kim` | Jordan Kim, Data Engineer | Data integrity. Covers both extraction quality (raw source → anchor) and end-to-end pipeline tracing (drops, duplication, time-alignment, reproducibility). |
 | `sophia-okafor` | Sophia Okafor, Tech Writer/Engineer | Spec drift. Compares docs, methods sections, and configs to actual code behavior; flags every divergence. |
 | `dev-nakamura` | Dev Nakamura, Release Engineer | Software releases, CI/CD, versioning, changelog accuracy, build reproducibility, deployment pipelines. |
+| `rafael-santos` | Dr. Rafael Santos, Physicist | Physical validity: dimensional analysis, conservation laws, boundary conditions, approximation validity, numerical scheme physics. |
+| `ingrid-lindqvist` | Prof. Ingrid Lindqvist, Mathematician | Mathematical rigor: derivation correctness, theorem applicability, numerical stability and convergence, linear algebra, inverse problems, statistical assumptions. |
 
 ## How it works (design philosophy)
 
