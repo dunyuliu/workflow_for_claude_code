@@ -79,7 +79,7 @@ Elena and Victor route to the right specialist automatically. You rarely need to
 | Slash | What |
 |---|---|
 | `/audit` | Single-pass eight-section project audit. Writes `AUDIT.md`. Sections: goal & implementation, inventory & stale, reproducibility, physics & numerics, implementation consistency, logging & errors, performance, top-N priorities. |
-| `/release` | Version-bump release workflow. Triggers: `release` (patch), `release minor`, `release major`. Audits against `PROJECT_RULES.md` in the project root, archives release notes, commits as `release: v<X.Y.Z> — <summary>`. |
+| `/release` | Version-bump release workflow. Triggers: `release` (patch), `release minor`, `release major`. Optionally audits against `PROJECT_RULES.md` if present, archives release notes, commits as `release: v<X.Y.Z> — <summary>`. |
 
 ## Adding a new agent
 
